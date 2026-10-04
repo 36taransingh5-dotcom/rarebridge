@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --color-paper: #f3f0e8;
+  --color-ink: #1c1915;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1000px 420px at 0% -10%, rgba(44, 58, 134, 0.07), transparent 50%),
+    radial-gradient(800px 360px at 100% 0%, rgba(91, 75, 138, 0.06), transparent 46%),
+    #f3f0e8;
+  color: #1c1915;
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+button, input {
+  font: inherit;
+}
+
+.react-flow__node-entity {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__controls {
+  border: 1px solid #e4ddd2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;
+}
